@@ -1,25 +1,37 @@
 body {
 	margin: 0;
 }
+<<<<<<< HEAD
 /*
 * {
 	border: 1px solid green;
 }
 */
+=======
+>>>>>>> origin/OldFile
 
 /* HEADER AND MENU */
 
 header {
 	width: 100%;
 	height: 20mm;
+<<<<<<< HEAD
 	/*background-color: #467B87;*/
 	background-color: rgba(70,123,135,1);
+=======
+	background-color: #467B87;
+>>>>>>> origin/OldFile
 	margin: 0;
 	font-family: "Questrial", sans-serif;
 	font-weight: 300;
 	color: #FFDEEE;
 	position: fixed;
 	z-index: 100;
+<<<<<<< HEAD
+=======
+	text-decoration: none;
+
+>>>>>>> origin/OldFile
 }
 
 header h1 {
@@ -29,6 +41,7 @@ header h1 {
 	margin: 1.1% 0 1.5% 40pt;
 }
 
+<<<<<<< HEAD
 header h1 a {
 	color: #FFDEEE;
 	text-decoration: none;
@@ -46,12 +59,22 @@ header h1 a:hover, header h1 a:focus {
 	bottom: 0;
 	margin: auto 8% auto 0;
 	height: 1em;
+=======
+#nav_menu ul {
+	float: right;
+	list-style-type: none;
+	position: relative;
+	margin: 1.8% 8% 2% 0;
+>>>>>>> origin/OldFile
 }
 
 #nav_menu ul li {
 	float: left;
 	font-size: 19pt;
+<<<<<<< HEAD
 	line-height: 0.6em;
+=======
+>>>>>>> origin/OldFile
 }
 
 #nav_menu ul li a {
@@ -67,28 +90,19 @@ header h1 a:hover, header h1 a:focus {
 	color: #0034D8;
 }
 
+<<<<<<< HEAD
 /* MOBILE MENU */
-
-#mobile_menu ul li a {
-	text-decoration: none;
-	color: #FFDEEE;
-	font-size: 25px;
-}
 
 #mobile_menu ul li {
 	list-style-type: none;
-	margin-bottom: 10px;
+	
 }
-
 #mobile_menu>ul {
 	display: none;
 	position: absolute;
 	right: 0;
-	top: 16mm;
-	width: 50mm;
-	height: 30mm;
-	background-color: rgba(70,123,135,1);
-
+	top: 20mm;
+	width: 40mm;
 }
 
 #mobile_menu>svg {
@@ -101,7 +115,7 @@ header h1 a:hover, header h1 a:focus {
 	position: absolute;
 	top: 0;
 	width: 20mm;
-	font-size: 50px;
+	font-size: 30px;
 	line-height: 20mm;
 	text-align: center;
 }
@@ -109,12 +123,15 @@ header h1 a:hover, header h1 a:focus {
 	content: "\2261";
 	cursor: pointer;
 }
+=======
+>>>>>>> origin/OldFile
 
 /* PAGE POSITIONING */
 
 .page {
 	width: 100%;
 	height: 960px;
+<<<<<<< HEAD
 	position: relative;
 }
 
@@ -125,6 +142,8 @@ a[name] {
 	/* border-bottom: 3px solid purple; */
 	width: 300px;
 	height: 5px;
+=======
+>>>>>>> origin/OldFile
 }
 
 
@@ -153,50 +172,23 @@ h2 {
     height: 300px;
     width: 300px;
     margin-left: 40pt;
-    padding: 20px;
     
     background-color: white;
     }
-#cbbio {
-	width: 350px;
-	height: 300px;
-}
- .workimg {
- 	float: right;
- 	margin: 15px;
- 	border-radius: 20px;
- }
 
-.worktitle {
-	clear: right;
-	font-family: "Quicksand", sans-serif;
-	font-weight: 600;
-	
-	margin-left: 10px;
-	padding-top: 10px;
-}
-.worktitle a {
-	color: #0034D8;
-	text-decoration: none;
-}
-.worktitle a:visited {
-	color: #0034D8;
-}
 
-.workdescript {
-	margin-left: 10px;
-	margin-top: 0;
-	font-family: "europa",sans-serif;
-}
 
 /* CONTACT FORM */
 
+<<<<<<< HEAD
 
 form {
 	margin: 0;
 	padding: 0;
 }
 
+=======
+>>>>>>> origin/OldFile
 input[type=text], input[type=email] {
 	border: none;
 	background-color: #FCF5F9;
@@ -238,32 +230,6 @@ textarea {
 	padding: 1.5em;
 }
 
-input[type=submit] {
-	background-color: rgba(70,123,135,.7);
-	color: white;
-	border: none;
-	width: 100px;
-	height: 30px;
-	font-family: "quicksand";
-	font-size: 13pt;
-	margin-top: 10px;
-}
-
-/* FOOTER */
-
-footer {
-	background-color: rgba(70,123,135,1);
-	width: 100%;
-	height: 40mm;
-}
-footer p {
-	color: white;
-	font-family: "quicksand";
-	font-size: 14pt;
-	margin-left: 80px;
-	padding-top: 30px;
-}
-
 /* BG PATTERN */
 
 #bgimgpatternback, #bgimgpatternfront {
@@ -288,6 +254,7 @@ position:absolute;z-index:-10000;
 
 }
 
+<<<<<<< HEAD
 /* RESPONSIVE */
 
 @media screen and (min-width: 1001px) {
@@ -306,9 +273,8 @@ position:absolute;z-index:-10000;
 	#nav_menu {
 		display: none;
 	}
-	header h1 {
-		font-size
-	}
 }
 
+=======
+>>>>>>> origin/OldFile
 

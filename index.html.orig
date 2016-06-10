@@ -18,6 +18,7 @@
 	<svg  id="bgimgpatternback" width="12000px" height="12000px"></svg>
 	</div>
 	<header>
+<<<<<<< HEAD
 		<h1><a href="index.html">Darya Zorina</a></h1>
 		<nav id="nav_menu">
 			<ul>
@@ -31,18 +32,32 @@
 				<li><a href="#about">about</a></li>
 				<li><a href="#work">work</a></li>
 				<li><a href="#contact">contact</a></li>
+=======
+		<h1>Darya Zorina</h1>
+		<nav id="nav_menu">
+			<ul>
+				<li><a href="#">about</a></li>
+				<li><a href="#">work</a></li>
+				<li><a href="#">contact</a></li>
+>>>>>>> origin/OldFile
 			</ul>
 		</nav>
 	</header>
 	
 	<main>
+<<<<<<< HEAD
 		<section class="page"></section>
 		
 		<section class="page">
 		<a name="about"></a>
+=======
+		<section class="page" id="pg1stpage"></section>
+		
+		<section class="page" id="pgabout">
+>>>>>>> origin/OldFile
 			<div class="column" id="welc_col_1">
 				<svg id="decsqabt" width="373px" height="274px" class="shape"></svg>
-				<h2>Happy Interaction</h2>
+				<h2>Hello and Welcome</h2>
 				<div class="contentblock" id="cbbio">
 					<p>Darya is an interactive media artist working in Detroit, MI. 
 					</p>
@@ -56,39 +71,46 @@
 		</section>
 		
 		
+<<<<<<< HEAD
 		<section class="page">
 		<a name="work"></a>
+=======
+		<section class="page" id="pgwork">
+>>>>>>> origin/OldFile
 			<div class="column" id="prj_col_1">
 				<svg id="decsqprj" width="274px" height="274px" class="shape"></svg>
 				<h2>Projects</h2>
 				<div class="contentblock" id="cbprj_1">
-					<a href="http://www.artforchurch.org"><img class="workimg" src="images/work_a4c.png" alt="art for church"></a><br>
-					<h3 class="worktitle"><a href="http://www.artforchurch.org">Art for Church</a></h3><br>
-					<p class="workdescript">Website for fine artist</p>
 				</div>
 			</div>
 			<div class="column" id="prj_col_2">
+<<<<<<< HEAD
 				<svg id="deccirc" width="274px" height="274px" class="shape"></svg>
 				<h2>&nbsp;</h2>
+=======
+				<svg id="deccirc" width="274px" height="274px" class="shape"></svg>
+>>>>>>> origin/OldFile
 				<div class="contentblock" id="cbprj2">
-					<a href="FlrPage.html"><img class="workimg" src="images/work_css.png" alt="flower animation"></a><br>
-					<h3 class="worktitle"><a href="FlrPage.html">CSS Animation</a></h3><br>
-					<p class="workdescript">A scripted animation tapestry</p>
 				</div>
 			</div>
 			<div class="column" id="prj_col_3">
+<<<<<<< HEAD
 				<svg id="dectri1" width="274px" height="274px" class="shape"></svg>
 				<h2>&nbsp;</h2>
+=======
+				<svg id="dectri1" width="274px" height="274px" class="shape"></svg>
+>>>>>>> origin/OldFile
 				<div class="contentblock" id="cbprj_3">
-					<a href="https://vimeo.com/user5329027"><img class="workimg" src="images/work_vid.png" alt="video work"></a><br>
-					<h3 class="worktitle"><a href="https://vimeo.com/user5329027">Videos</a></h3><br>
-					<p class="workdescript">Video art and music videos</p>
 				</div>
 			</div>
 		</section>
 		
+<<<<<<< HEAD
 		<section class="page">
 		<a name="contact"></a>
+=======
+		<section class="page" id="contact">
+>>>>>>> origin/OldFile
 			<form>
 				<div class="column" id="contct_col1">
 					<svg id="dectricont" width="274px" height="274px" class="shape"></svg>
@@ -101,11 +123,14 @@
 				</div>
 				
 				<div class="column" id="contct_col_2">
+<<<<<<< HEAD
 					<svg id="decsqprj" width="274px" height="274px" class="shape"></svg>
 					<h2>&nbsp;</h2>
+=======
+					<svg id="decsqprj" width="274px" height="274px" class="shape"></svg>
+>>>>>>> origin/OldFile
 					<div class="contentblock" id="formfields2">
-						<textarea name="message" placeholder="message"></textarea><br>
-						<input type="submit" value="Submit"></input>
+						<textarea name="message" placeholder="message"></textarea>
 					</div>
 				</div>
 				
@@ -117,13 +142,15 @@
 	</main>
 	
 	<footer>
-		<p>daryazorin@gmail.com</p>
-		<div id="socialmedia"></div>
 	</footer>
 	
 </body>
 	<script>
+<<<<<<< HEAD
 		Import("squishy/DOM", "squishy/svg", "squishy/interactive", function(DOM, svg, interactive) {
+=======
+		Import("squishy/DOM", "squishy/svg", function(DOM, svg) {
+>>>>>>> origin/OldFile
 			var main = new DOM.Frame(); 
 			
 			var target1 = main.query("#bgimgpatternback")[0];
@@ -176,6 +203,7 @@
 					target[0].appendChild(subject[0]);
 					subject[0].setAttributeNS(null,"x", "0");
 					subject[0].setAttributeNS(null,"y", "0");
+<<<<<<< HEAD
 				});
 				var mobileMenu =new svg.SVG(200,200);
 				rect=mainimgcontainer.query("#hamburger")[0]
@@ -208,6 +236,11 @@
 				
 				callMobMenu.appendChild(hamburger.element);
 			} });
+=======
+					});
+			}
+			});
+>>>>>>> origin/OldFile
 		});
 		
 	</script>

@@ -1,0 +1,33 @@
+body {
+	perspective: 500px;
+	transorm-origin: 50% 50%;
+	transform: translateZ(0px);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+.stageitem {
+	position: absolute; 
+	margin: 0px;
+	
+	transform-style: preserve-3d; 
+	transform: translate(0px, 0px) translateZ(0px) scale(1, 1); 
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0); 
+	background-size: 100% 100%; 
+	background-position: 0px 0px; 
+	background-repeat: no-repeat;
+	animation: spin 10s linear 0s infinite;
+}
+@keyframes spin{
+	from {transform: rotate(0)}
+	to {transform: rotate(360deg)}
+}
+
+#Stage_mag13_part5Copy,#Stage_mag13_part5,#Stage_mag4_full2,#Stage_mag13_part,#Stage_mag8_full,#Stage_mag5_part2,#Stage_mag10_full,#Stage_mag2_part,#Stage_mag1_part2,#Stage_mag4_part2,#Stage_Ellipse,#Stage_Work {
+	animation: spin 10s linear 0s infinite reverse;
+}
+
+/*#Stage_mag13_part5Copy2,#Stage_mag13_part5Copy,#Stage_mag13_part3,#Stage_mag13_part5,#Stage_mag13_part4,#Stage_mag4_full2,#Stage_mag12_full,#Stage_mag13_part,#Stage_mag13_part2,#Stage_mag8_full,#Stage_mag6_full,#Stage_mag5_part2,#Stage_mag9_full,#Stage_mag10_full,#Stage_mag2_full,#Stage_mag2_part,#Stage_mag1_full,#Stage_mag1_part2,#Stage_mag3_part2,#Stage_mag4_part2,#Stage_mag7_full2,#Stage_Ellipse,#Stage_Title,#Stage_Work,#Stage_Info */
