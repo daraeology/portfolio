@@ -1,5 +1,15 @@
+html {
+
+}
+
 body {
 	margin: 0;
+ overflow: hidden;
+}
+body * {
+  transform:translate3d(0,0,0);
+  transform-style: preserve-3d;
+  transform-origin:100% 50%;
 }
 /*
 * {
@@ -7,8 +17,41 @@ body {
 }
 */
 
-/* HEADER AND MENU */
+/*PARALLAX SCROLL*/
 
+#mainwrapper {
+   perspective: 1px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 20mm;
+  bottom: 0;
+}
+
+.scrollwrapper {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+.scr_bg {
+  transform: translateZ(-10px) scale(11);
+}
+.scr_mg {
+  transform: translateZ(0.1px);
+}
+.scr_fg {
+  transform:translateZ(0.2px);
+
+}
+
+
+main { position:absolute; }
+
+
+/* HEADER AND MENU */
 header {
 	width: 100%;
 	height: 20mm;
@@ -19,6 +62,7 @@ header {
 	font-weight: 300;
 	color: #FFDEEE;
 	position: fixed;
+
 	z-index: 100;
 }
 
@@ -81,14 +125,19 @@ header h1 a:hover, header h1 a:focus {
 }
 
 #mobile_menu>ul {
-	display: none;
+	transition: transform 1s ease;
 	position: absolute;
 	right: 0;
 	top: 16mm;
 	width: 50mm;
 	height: 30mm;
 	background-color: rgba(70,123,135,1);
+  transform-origin: 100% 0;
+  z-index:-9999
+}
 
+#mobile_menu>ul.hidden {
+  transform: rotateY(90deg);
 }
 
 #mobile_menu>svg {
@@ -141,7 +190,7 @@ h2 {
 .shape { position:absolute;z-index:-100; }
 
 .contentblock {
-	
+
 	font-family: "europa",sans-serif;
 	font-size: 14px;
     line-height: 1.5em;
@@ -154,7 +203,7 @@ h2 {
     width: 300px;
     margin-left: 40pt;
     padding: 20px;
-    
+
     background-color: white;
     }
 #cbbio {
@@ -171,7 +220,7 @@ h2 {
 	clear: right;
 	font-family: "Quicksand", sans-serif;
 	font-weight: 600;
-	
+
 	margin-left: 10px;
 	padding-top: 10px;
 }
@@ -207,7 +256,7 @@ input[type=text], input[type=email] {
 	font-size: 13pt;
 	color: black;
 	padding-left: 1em;
-	
+
 }
 
 input[type=text]:focus, input[type=email]:focus {
@@ -222,7 +271,7 @@ textarea {
 	font-size: 13pt;
 	color: black;
 	padding: 1em;
-	
+
 }
 
 #formfields1 {
@@ -255,6 +304,8 @@ footer {
 	background-color: rgba(70,123,135,1);
 	width: 100%;
 	height: 40mm;
+  position:absolute;
+  bottom:-50mm;
 }
 footer p {
 	color: white;
@@ -267,10 +318,14 @@ footer p {
 /* BG PATTERN */
 
 #bgimgpatternback, #bgimgpatternfront {
-	width: 12000px
+	width: 12000px;
+
+
+
+
 	height: 12000px;
 
-	
+
 }
 
 @keyframes fade1 {
@@ -280,12 +335,11 @@ to { fill:rgba(0,0,0,0.05); }
 }
 #New_Pattern_2 { animation:fade1 2.5s forwards 1s alternate; }
 
-#bgimgpattern_2_ { animation: fade1 5s linear 2s infinite;}
-.background { 
+.background {
 position:absolute;z-index:-10000;
 }
 #bgimgpatternback pattern {
-
+animation:fade1 2.5s forwards 1s alternate;
 }
 
 /* RESPONSIVE */
@@ -293,7 +347,7 @@ position:absolute;z-index:-10000;
 @media screen and (min-width: 1001px) {
 	#mobile_menu {
 		display: none;
-		
+
 	}
 }
 
