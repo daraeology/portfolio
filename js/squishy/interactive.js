@@ -229,14 +229,23 @@ Module(function M() { M.Import(
       C.Mixin(events.hasEvents);
 
       C.Def(function enable() {
-        this.addEvent("clickstart","mousedown touchstart",
+        var evs=["mousedown","mouseup","mouseout"];
+        var tevs=["touchstart","touchend","touchleave"]
+        this.addEvent("touching","touchstart",
+                      this.touching
+                      );
+        this.addEvent("clickstart",tevs[0]+" "+evs[0],
                       this.clickstart);
-        this.addEvent("clickend","mouseup touchend",
+        this.addEvent("clickend",tevs[1]+" "+evs[1],
                       this.clickend);
-        this.addEvent("cancel","mouseout touchleave",
+        this.addEvent("cancel",tevs[2]+" "+evs[2],
                       this.cancel);
         this.addClass('enabled');
         this.removeClass('disabled');
+
+      });
+      C.Def(function touching() {
+        this.touching=true;
       });
       C.Def(function disable() {
         this.disableEvents('clickstart','clickend','cancel','enabled');
@@ -254,10 +263,13 @@ Module(function M() { M.Import(
         }
       });
       C.Def(function clickend(ev) {
-        if(this.clicking) {
+
+        if(this.clicking&&!this.touching) {
           this.clicking=false;
+
           this.onclick(ev);
         }
+        this.touching=false;
       });
       C.Def(function cancel(ev) {
         this.clicking=false;
