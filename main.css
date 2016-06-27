@@ -357,6 +357,16 @@ input[type=submit] {
 	margin-top: 10px;
 }
 
+.feedback {
+  font-family: "quicksand";
+	font-size: 25px;
+  font-weight: 800;
+  line-height: 50px;
+  color: rgba(70,123,135,1);
+  margin-left: 10%;
+}
+
+
 /* FOOTER */
 
 footer {
@@ -376,7 +386,7 @@ footer p {
 	float: left;
 	margin-left: 50px;
 	transform: scale(.9);
-	
+
 }
 footer div {
 	margin-left: 12%;
@@ -492,7 +502,7 @@ animation:fade1 2.5s forwards 1s alternate;
 	#nav_menu {
 		display: none;
 	}
-	
+
 }
 
 
