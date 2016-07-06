@@ -429,7 +429,7 @@ footer div svg:hover, footer div svg:focus {
 }
 
 @keyframes fade1 {
-from { fill:rgba(0,0,0,1); }
+from { fill:rgba(70,123,135,1); }
 to { fill:rgba(0,0,0,0.05); }
 
 }
@@ -442,6 +442,11 @@ position:absolute;z-index:-10000;
 animation:fade1 2.5s forwards 1s alternate;
 }
 
+
+
+
+
+
 /* RESPONSIVE */
 
 
@@ -453,21 +458,46 @@ animation:fade1 2.5s forwards 1s alternate;
   .column:first-child>div {
     left: 15%;
   }
+   #phonecontact {
+    display: none;
+  }
 }
+
+
 
 @media screen and (min-width: 1001px) {
 	#mobile_menu {
 		display: none;
-
 	}
+  #phonecontact {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1300px) {
 	.column {
     width: 33%;
   }
+
 }
 
+
+
+/*PHONE */
+
+@media screen and (max-width: 1000px) {
+	#mobile_menu {
+		display: block;
+		position: absolute;
+		right: 0;
+	}
+	#nav_menu {
+		display: none;
+	}
+  #phonecontact {
+    display:none;
+  }
+}
 
 
 @media screen and (max-width: 960px) {
@@ -491,18 +521,22 @@ animation:fade1 2.5s forwards 1s alternate;
   		padding-top: 15px;
   		clear: left;
 	}
+  #contform {
+    display: none;
+  }
+  #phonecontact {
+    display: block;
+  }
+  #phonecontact div p a {
+    color: rgba(70,123,135,1);
+	  font-family: "quicksand";
+	  font-size: 18pt;
+    text-decoration: none;
+  }
+  footer p {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 1000px) {
-	#mobile_menu {
-		display: block;
-		position: absolute;
-		right: 0;
-	}
-	#nav_menu {
-		display: none;
-	}
-
-}
 
 

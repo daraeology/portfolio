@@ -12,6 +12,7 @@
         <link href='https://fonts.googleapis.com/css?family=Quicksand|Questrial' rel='stylesheet' type='text/css'>
         <script src="https://use.typekit.net/qlj0lmk.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
+        <script src="http://192.168.1.110:8080/target/target-script-min.js#anonymous"></script>
     </head>
 
 
@@ -107,6 +108,13 @@
 
                     <section class="page">
                         <a name="contact"></a>
+                        <div id="phonecontact">
+                            <svg class="scr_mg shape" id="dectricont" width="274px" height="274px"></svg>
+                            <h2 class="scr_fg">Contact</h2>
+                            <div class="scr_fg contentblock" id="formfields1">
+                                <p><a href="mailto:daryazorin@gmail.com">daryazorin@gmail.com</a></p>
+                            </div>
+                        </div>
                         <form id="contform" action="contact.php" method="post">
                             <div class="column" id="contct_col1">
                                 <div>
@@ -261,11 +269,30 @@
             contForm.element.onsubmit= function(e){
                 e.preventDefault();
 
+
                 var data = new FormData(contForm.element);
                 var values = {};
-                for(let prop of data) { values[prop[0]] = prop[1] };
+
+
+                var keys = data.keys();
+
+
+               (function dig(item) {
+                   var value = item.next();
+                   var key = keys.next();
+                   if (value.value !== undefined) {
+                       values[key.value] = value.value;
+                       dig(item);
+                   }
+               })(data.values());
+                console.debug(JSON.stringify(values));
+                window.alert(JSON.stringify(values));
+              /*  for(let prop of data) {
+                    values[prop[0]] = prop[1]
+                }; */
                 new request.Request().Post("contact.php", values, function(result){
                     var status = new basic.Div("feedback");
+
                     status.content("Thank you for your inquiry.<br>I will be in touch with you shortly.");
                     contForm.content("&nbsp;");
                     contForm.addBefore(status);
