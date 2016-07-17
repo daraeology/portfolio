@@ -8,8 +8,11 @@ body {
 }
 body * {
   transform:translate3d(0,0,0);
+  -moz-transform:translate3d(0,0,0);
   transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
   transform-origin:100% 50%;
+  -moz-transform-origin:100% 50%;
 }
 /*
 * {
@@ -43,16 +46,18 @@ body * {
 
 .scr_bg {
   transform: translateZ(-13px) scale(11);
+  -moz-transform: translateZ(-13px) scale(11);
 }
 #bg2 {transform: translateZ(-1px) scale(11);
-
+	-moz-transform: translateZ(-1px) scale(11);
 }
 .scr_mg {
   transform: translateZ(0.1px);
+  -moz-transform: translateZ(0.1px);
 }
 .scr_fg {
   transform:translateZ(0.2px) scale(.75);
-
+  -moz-transform:translateZ(0.2px) scale(.75);
 }
 
 
@@ -86,7 +91,7 @@ header h1 {
 }
 
 header h1 a {
-	color: rgba(70,123,135,1);
+	color: #466284;
 	text-decoration: none;
 	transition: color .3s ease;
 }
@@ -99,16 +104,16 @@ header h1 a:hover, header h1 a:focus {
 	list-style-type: none;
 	position: absolute;
 	right: 0;
-	top: 75px;
+	top: 25px;
 	bottom: 0;
-	margin: auto 8% auto 0;
+	margin: 0 8% auto 0;
 	height: 1em;
 }
 
 #nav_menu ul li {
 	float: left;
 	font-size: 19pt;
-	line-height: 0.6em;
+	/*line-height: 0.6em;*/
 }
 
 #nav_menu ul li a {
@@ -116,7 +121,7 @@ header h1 a:hover, header h1 a:focus {
 	font-size: 19pt;
 	display: block;
 	text-decoration: none;
-	color: #467B87;
+	color: #466284;
 	padding: 0 2em;
 	transition: color .3s ease;
 }
@@ -129,7 +134,7 @@ header h1 a:hover, header h1 a:focus {
 
 #mobile_menu ul li a {
 	text-decoration: none;
-	color: #467B87;
+	color: #466284;
 	font-size: 25px;
 }
 
@@ -166,7 +171,7 @@ header h1 a:hover, header h1 a:focus {
 	width: 20mm;
 	font-size: 50px;
 	line-height: 20mm;
-	color: #467B87;
+	color: #466284;
 	text-align: center;
   z-index: 100;
 }
@@ -370,7 +375,7 @@ input[type=submit] {
 /* FOOTER */
 
 footer {
-	background-color: rgba(70,123,135,1);
+	background-color: #466284;
 	width: 100%;
 	height: 50mm;
   position:absolute;
@@ -429,7 +434,7 @@ footer div svg:hover, footer div svg:focus {
 }
 
 @keyframes fade1 {
-from { fill:rgba(70,123,135,1); }
+from { fill: #2C3E5B; }
 to { fill:rgba(0,0,0,0.05); }
 
 }
